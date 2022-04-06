@@ -119,6 +119,12 @@ console.log(typeof givValue);
 */
 
 /* WRITE YOUR ANSWER HERE */
+let checker = 6;
+if (checker % 2 === 0) {
+  console.log("even");
+} else {
+  console.log("odd");
+}
 
 /* EXERCISE 9
 Change the order of logic in the code so that it will return the correct statements in all cases.
