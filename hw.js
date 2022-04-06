@@ -1,6 +1,8 @@
 /* EXERCISE 1
  Write a piece of code to find the largest of  given two integers
 */
+
+/* WRITE YOUR ANSWER HERE */
 let num1 = 4;
 let num2 = 5;
 if (num1 > num2) {
@@ -9,13 +11,17 @@ if (num1 > num2) {
   console.log("second number is larger");
 }
 
-/* WRITE YOUR ANSWER HERE */
-
 /* EXERCISE 2
   Write a piece of code to check: if  given an integer is NOT equal to 5 then display " not equal"
 */
 
 /* WRITE YOUR ANSWER HERE */
+let givenInt = 6;
+if (givenInt === 5) {
+  console.log("equal");
+} else {
+  console.log("not equal");
+}
 
 /* EXERCISE 2
   Write a piece of code to check: if  given an integer is  divisible  by  5 then display "divisible by 5" (search for modulo operator)
