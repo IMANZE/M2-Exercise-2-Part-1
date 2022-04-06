@@ -82,6 +82,29 @@ Create three variables and assign a numerical value to each one of them.
 */
 
 /* WRITE YOUR ANSWER HERE */
+let c = 3;
+let d = 6;
+let e = 9;
+
+if (c > d && c > e) {
+ if  (d > e) {
+  console.log(c + ", " + d + ", " + e);
+ } else {
+  console.log(c + ", " + e + ", " + d);
+ }
+}else if (d > c && d > e){
+  if (c > e){
+    console.log(d + ", " + c + ", " + e);
+  } else{
+    console.log(d + ", " + e + ", " + c);
+  }
+} else if(e > c && e > d){
+   if (c > d) {
+     console.log(e + ", " + c + ", " + d);
+   } else{
+     console.log(e + ", " + d + ", " + c);
+   }
+}
 
 /* EXERCISE 7
 Write a piece of code for checking if a given value is a integer or not. (search for 'typeof')
