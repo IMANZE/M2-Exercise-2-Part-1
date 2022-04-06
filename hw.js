@@ -111,6 +111,8 @@ Write a piece of code for checking if a given value is a integer or not. (search
 */
 
 /* WRITE YOUR ANSWER HERE */
+let givValue = 4.6;
+console.log(typeof givValue);
 
 /* EXERCISE 8
  Write a piece of code for checking if a given number is even or odd. (search for modulo operator)
