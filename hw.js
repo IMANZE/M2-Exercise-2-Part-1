@@ -41,8 +41,8 @@ if (divInt % 5 === 0) {
 
 /* WRITE YOUR ANSWER HERE */
 let x = 1;
-let  y = 8;
-if ((x === 8) || (y === 8) || (x - y === 8) ||( x + y === 8)){
+let y = 8;
+if (x === 8 || y === 8 || x - y === 8 || x + y === 8) {
   console.log("true");
 } else {
   console.log("not true");
@@ -59,7 +59,7 @@ let totalShoppingCart = 40;
 if (totalShoppingCart > 50) {
   console.log(totalShoppingCart + "+" + "free shipping");
 } else {
-  console.log(totalShoppingCart += 10);
+  console.log((totalShoppingCart += 10));
 }
 
 //Using ternary
@@ -87,23 +87,23 @@ let d = 6;
 let e = 9;
 
 if (c > d && c > e) {
- if  (d > e) {
-  console.log(c + ", " + d + ", " + e);
- } else {
-  console.log(c + ", " + e + ", " + d);
- }
-}else if (d > c && d > e){
-  if (c > e){
+  if (d > e) {
+    console.log(c + ", " + d + ", " + e);
+  } else {
+    console.log(c + ", " + e + ", " + d);
+  }
+} else if (d > c && d > e) {
+  if (c > e) {
     console.log(d + ", " + c + ", " + e);
-  } else{
+  } else {
     console.log(d + ", " + e + ", " + c);
   }
-} else if(e > c && e > d){
-   if (c > d) {
-     console.log(e + ", " + c + ", " + d);
-   } else{
-     console.log(e + ", " + d + ", " + c);
-   }
+} else if (e > c && e > d) {
+  if (c > d) {
+    console.log(e + ", " + c + ", " + d);
+  } else {
+    console.log(e + ", " + d + ", " + c);
+  }
 }
 
 /* EXERCISE 7
@@ -143,7 +143,7 @@ let val = 2;
 if (val < 5) {
   console.log("Less than 5");
 } else if (val < 10) {
-   console.log("Less than 10");
+  console.log("Less than 10");
 } else {
   console.log("Greater than or equal to 10");
 }
@@ -161,20 +161,16 @@ num >= 20 - display Huge
 /* WRITE YOUR ANSWER HERE */
 let num = 6;
 if (num < 5) {
- console.log("Tiny"); 
-}
-else if (num < 10) {
+  console.log("Tiny");
+} else if (num < 10) {
   console.log("small");
-} 
-else if(num < 15){
-console.log("Medium");
-}  
-else if(num < 20){
+} else if (num < 15) {
+  console.log("Medium");
+} else if (num < 20) {
   console.log("Large");
-} 
-else if(num >= 20){
+} else if (num >= 20) {
   console.log("Huge");
-}    
+}
 
 /*  EXERCISE 11
 Use a ternary operator to assign to a variable called gender the string values "male" or "female".
@@ -191,7 +187,7 @@ Display the numbers 0 through 5 (inclusive) in acesnding order using a while loo
 
 /* WRITE YOUR ANSWER HERE */
 let i = 0;
-while ( i <= 5) {
+while (i <= 5) {
   console.log(i++);
 }
 
@@ -203,13 +199,20 @@ Display the numbers 0 through 10 (inclusive) in acesnding order using a for loop
 
 for (let n = 0; n <= 10; n++) {
   console.log(n);
-  
 }
+
 /* EXERCISE 14
 Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displaying 3 and 8.
 */
 
 /* WRITE YOUR ANSWER HERE */
+for (let p = 0; p <= 10; p++) {
+  if (p === 3 || p === 8) {
+    continue;
+  } else {
+    console.log(p);
+  }
+}
 
 /* EXERCISE 15
  Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen
@@ -217,16 +220,58 @@ Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displa
 
 /* WRITE YOUR ANSWER HERE */
 
+for (let index = 0; index <= 15; index++) {
+  if (index % 2 === 0) {
+    console.log("even " + index);
+  } else {
+    console.log("odd " + index);
+  }
+}
 /* EXERCISE 16
   Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz
  */
 
 /* WRITE YOUR ANSWER HERE */
+for (let intFizz = 1; intFizz < 100; intFizz++) {
+  if (intFizz % 3 === 0 && intFizz % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (intFizz % 3 === 0) {
+    console.log("Fizz");
+  } else if (intFizz % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(intFizz);
+  }
+}
 
 /* EXERCISE 17
   Write a piece of code to check the day of the week .  Usie  SWITCH - CASE  and given "day" variable with range from 1 to 7. 
-  For example: if day value is equal to 1 display "Monday", if day value is equal to 3 display "Wednesday"
-
-  */
+  For example: if day value is equal to 1 display "Monday", if day value is equal to 3 display "Wednesday"*/
 
 /* WRITE YOUR ANSWER HERE */
+
+switch (new Date().getDay()) {
+  case 0:
+    console.log("Sunday");
+    break;
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+  // break;
+  // default:
+  //   console.log("invalid date");
+}
