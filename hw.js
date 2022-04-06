@@ -55,6 +55,15 @@ if ((x === 8) || (y === 8) || (x - y === 8) ||( x + y === 8)){
 */
 
 /* WRITE YOUR ANSWER HERE */
+let totalShoppingCart = 40;
+if (totalShoppingCart > 50) {
+  console.log(totalShoppingCart + "+" + "free shipping");
+} else {
+  console.log(totalShoppingCart += 10);
+}
+
+//Using ternary
+//let price = totalShoppingCart > 50 ? totalShoppingCart : totalShoppingCart + 10;
 
 /* EXERCISE 5
 You are working on an e-commerce website. Today is Black Friday and everything has a 20% discount at the end of the purchase.
