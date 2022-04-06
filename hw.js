@@ -182,6 +182,7 @@ Use a ternary operator to assign to a variable called gender the string values "
 */
 
 /* WRITE YOUR ANSWER HERE */
+let gender = isMale ? male : female;
 
 /* EXERCISE 12
 Display the numbers 0 through 5 (inclusive) in acesnding order using a while loop.
