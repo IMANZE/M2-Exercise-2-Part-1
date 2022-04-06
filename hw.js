@@ -159,6 +159,22 @@ num >= 20 - display Huge
 */
 
 /* WRITE YOUR ANSWER HERE */
+let num = 6;
+if (num < 5) {
+ console.log("Tiny"); 
+}
+else if (num < 10) {
+  console.log("small");
+} 
+else if(num < 15){
+console.log("Medium");
+}  
+else if(num < 20){
+  console.log("Large");
+} 
+else if(num >= 20){
+  console.log("Huge");
+}    
 
 /*  EXERCISE 11
 Use a ternary operator to assign to a variable called gender the string values "male" or "female".
