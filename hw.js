@@ -71,6 +71,9 @@ You are working on an e-commerce website. Today is Black Friday and everything h
 */
 
 /* WRITE YOUR ANSWER HERE */
+let discount = totalShoppingCart * 0.2;
+totalShoppingCart = totalShoppingCart - discount;
+console.log(totalShoppingCart);
 
 /* EXERCISE 6
 Create three variables and assign a numerical value to each one of them. 
