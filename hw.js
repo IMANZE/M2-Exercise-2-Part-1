@@ -182,13 +182,18 @@ Use a ternary operator to assign to a variable called gender the string values "
 */
 
 /* WRITE YOUR ANSWER HERE */
-let gender = isMale ? male : female;
+let isMale = false;
+let gender = isMale ? "male" : "female";
 
 /* EXERCISE 12
 Display the numbers 0 through 5 (inclusive) in acesnding order using a while loop.
 */
 
 /* WRITE YOUR ANSWER HERE */
+let i = 0;
+while ( i <= 5) {
+  console.log(i++);
+}
 
 /* EXERCISE 13
 Display the numbers 0 through 10 (inclusive) in acesnding order using a for loop.
@@ -196,6 +201,10 @@ Display the numbers 0 through 10 (inclusive) in acesnding order using a for loop
 
 /* WRITE YOUR ANSWER HERE */
 
+for (let n = 0; n <= 10; n++) {
+  console.log(n);
+  
+}
 /* EXERCISE 14
 Display the numbers 0 through 10 (inclusive) in acesnding order  but skip displaying 3 and 8.
 */
