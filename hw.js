@@ -139,6 +139,14 @@ if (val < 10) {
 */
 
 /* WRITE YOUR ANSWER HERE */
+let val = 2;
+if (val < 5) {
+  console.log("Less than 5");
+} else if (val < 10) {
+   console.log("Less than 10");
+} else {
+  console.log("Greater than or equal to 10");
+}
 
 /*
 EXERCISE 10
