@@ -40,6 +40,13 @@ if (divInt % 5 === 0) {
 */
 
 /* WRITE YOUR ANSWER HERE */
+let x = 1;
+let  y = 8;
+if ((x === 8) || (y === 8) || (x - y === 8) ||( x + y === 8)){
+  console.log("true");
+} else {
+  console.log("not true");
+}
 
 /* EXERCISE 4
  You are working on an e-commerce website. In the variable totalShoppingCart you are storing the total amount spent by the current user.
